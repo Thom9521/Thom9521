@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { TutorialService } from "src/app/services/tutorial.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-add-tutorial",
@@ -14,8 +15,14 @@ export class AddTutorialComponent implements OnInit {
   };
   submitted = false;
 
-  constructor(private tutorialService: TutorialService) {}
+  constructor(
+    private tutorialService: TutorialService,
+    private _router: Router
+  ) {}
   ngOnInit() {}
+  toTutorials() {
+    this._router.navigate(["tutorials"]);
+  }
   saveTutorial() {
     const data = {
       title: this.tutorial.title,
