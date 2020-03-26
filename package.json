@@ -1,0 +1,19 @@
+{
+  "name": "crud-mean-stack",
+  "version": "1.0.0",
+  "description": "Tutorial of full crud with mean stack using mysql, express, angular, nodejs, sequalize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "mysql",
+    "express",
+    "angular",
+    "nodejs",
+    "sequalize"
+  ],
+  "author": "",
+  "license": "ISC"
+}
