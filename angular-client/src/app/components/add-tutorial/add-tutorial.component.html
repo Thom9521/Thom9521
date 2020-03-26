@@ -25,9 +25,15 @@
   </div>
   <div *ngIf="submitted">
     <h4>You submitted successfully!</h4>
-    <button class="btn btn-success" (click)="newTutorial()">Add</button>
-    <button class="ml-3 btn btn-success" (click)="toTutorials()">
-      Tutorials
-    </button>
+    <div class="mt-5 mb-5">
+      <h3>Add new tutorial:</h3>
+      <button class="btn btn-success" (click)="newTutorial()">Add</button>
+    </div>
+    <div>
+      <h3>See tutorials:</h3>
+      <button class="btn btn-success" (click)="toTutorials()">
+        Tutorials
+      </button>
+    </div>
   </div>
 </div>
